@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD22D49E2AC9E7D100442E8F /* DemoDataSource+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D4822AC9E7D100442E8F /* DemoDataSource+Models.swift */; };
+		AD22D49F2AC9E7D100442E8F /* DemoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D4832AC9E7D100442E8F /* DemoDataSource.swift */; };
+		AD22D4A12AC9E7D100442E8F /* DemoMenuButtonCellTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D4862AC9E7D100442E8F /* DemoMenuButtonCellTransformer.swift */; };
+		AD22D4A22AC9E7D100442E8F /* DemoTextFieldCellTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D4872AC9E7D100442E8F /* DemoTextFieldCellTransformer.swift */; };
+		AD22D4A42AC9E7D100442E8F /* DemoTitleCellTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D4892AC9E7D100442E8F /* DemoTitleCellTransformer.swift */; };
+		AD22D4A52AC9E7D100442E8F /* DemoAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D48B2AC9E7D100442E8F /* DemoAdapter.swift */; };
+		AD22D4A62AC9E7D100442E8F /* DemoCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D48C2AC9E7D100442E8F /* DemoCellDelegate.swift */; };
+		AD22D4A92AC9E7D100442E8F /* DemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D4912AC9E7D100442E8F /* DemoViewModel.swift */; };
+		AD22D4AA2AC9E7D100442E8F /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D4932AC9E7D100442E8F /* DemoViewController.swift */; };
+		AD22D4AB2AC9E7D100442E8F /* DemoDurationPickerContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D4952AC9E7D100442E8F /* DemoDurationPickerContentConfiguration.swift */; };
+		AD22D4AC2AC9E7D100442E8F /* DemoTextFieldContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D4962AC9E7D100442E8F /* DemoTextFieldContentConfiguration.swift */; };
+		AD22D4AD2AC9E7D100442E8F /* DemoDatePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D4972AC9E7D100442E8F /* DemoDatePickerContentView.swift */; };
+		AD22D4AE2AC9E7D100442E8F /* DemoTextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D4982AC9E7D100442E8F /* DemoTextFieldContentView.swift */; };
+		AD22D4B02AC9E7D100442E8F /* DemoDurationPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D49A2AC9E7D100442E8F /* DemoDurationPickerContentView.swift */; };
+		AD22D4B12AC9E7D100442E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D49B2AC9E7D100442E8F /* AppDelegate.swift */; };
+		AD22D4B32AC9E7D100442E8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22D49D2AC9E7D100442E8F /* SceneDelegate.swift */; };
+		AD22D4B62AC9E7EE00442E8F /* DurationPicker in Frameworks */ = {isa = PBXBuildFile; productRef = AD22D4B52AC9E7EE00442E8F /* DurationPicker */; };
+		AD2F43312AC9EA4C007A8B09 /* DurationPicker in Frameworks */ = {isa = PBXBuildFile; productRef = AD2F43302AC9EA4C007A8B09 /* DurationPicker */; };
+		AD4CB8952B74B6090048C037 /* DemoDatePickerCellTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4CB8942B74B6090048C037 /* DemoDatePickerCellTransformer.swift */; };
+		AD4CB8972B74B6440048C037 /* DemoDurationPickerCellTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4CB8962B74B6440048C037 /* DemoDurationPickerCellTransformer.swift */; };
+		AD4CB89B2B74B7260048C037 /* DemoDatePickerContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4CB89A2B74B7260048C037 /* DemoDatePickerContentConfiguration.swift */; };
+		AD4E7C612B789AE90012FF74 /* DurationPicker in Frameworks */ = {isa = PBXBuildFile; productRef = AD4E7C602B789AE90012FF74 /* DurationPicker */; };
+		ADA18D812AC9EAEE00563833 /* DurationPicker in Frameworks */ = {isa = PBXBuildFile; productRef = ADA18D802AC9EAEE00563833 /* DurationPicker */; };
+		ADA18D842AC9EBEA00563833 /* DurationPicker in Frameworks */ = {isa = PBXBuildFile; productRef = ADA18D832AC9EBEA00563833 /* DurationPicker */; };
+		ADA18D872AC9EC8C00563833 /* DurationPicker in Frameworks */ = {isa = PBXBuildFile; productRef = ADA18D862AC9EC8C00563833 /* DurationPicker */; };
+		ADDC067F2B13A8E800EBF5F4 /* DurationPicker.Mode++.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDC067E2B13A8E800EBF5F4 /* DurationPicker.Mode++.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD22D4CA2AC9E89C00442E8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AD22D4692AC9E7A600442E8F /* DurationPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DurationPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD22D4822AC9E7D100442E8F /* DemoDataSource+Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DemoDataSource+Models.swift"; sourceTree = "<group>"; };
+		AD22D4832AC9E7D100442E8F /* DemoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoDataSource.swift; sourceTree = "<group>"; };
+		AD22D4862AC9E7D100442E8F /* DemoMenuButtonCellTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoMenuButtonCellTransformer.swift; sourceTree = "<group>"; };
+		AD22D4872AC9E7D100442E8F /* DemoTextFieldCellTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTextFieldCellTransformer.swift; sourceTree = "<group>"; };
+		AD22D4892AC9E7D100442E8F /* DemoTitleCellTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTitleCellTransformer.swift; sourceTree = "<group>"; };
+		AD22D48B2AC9E7D100442E8F /* DemoAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAdapter.swift; sourceTree = "<group>"; };
+		AD22D48C2AC9E7D100442E8F /* DemoCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCellDelegate.swift; sourceTree = "<group>"; };
+		AD22D4912AC9E7D100442E8F /* DemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewModel.swift; sourceTree = "<group>"; };
+		AD22D4932AC9E7D100442E8F /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		AD22D4952AC9E7D100442E8F /* DemoDurationPickerContentConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoDurationPickerContentConfiguration.swift; sourceTree = "<group>"; };
+		AD22D4962AC9E7D100442E8F /* DemoTextFieldContentConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTextFieldContentConfiguration.swift; sourceTree = "<group>"; };
+		AD22D4972AC9E7D100442E8F /* DemoDatePickerContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoDatePickerContentView.swift; sourceTree = "<group>"; };
+		AD22D4982AC9E7D100442E8F /* DemoTextFieldContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTextFieldContentView.swift; sourceTree = "<group>"; };
+		AD22D49A2AC9E7D100442E8F /* DemoDurationPickerContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoDurationPickerContentView.swift; sourceTree = "<group>"; };
+		AD22D49B2AC9E7D100442E8F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD22D49C2AC9E7D100442E8F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD22D49D2AC9E7D100442E8F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AD4CB8942B74B6090048C037 /* DemoDatePickerCellTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoDatePickerCellTransformer.swift; sourceTree = "<group>"; };
+		AD4CB8962B74B6440048C037 /* DemoDurationPickerCellTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoDurationPickerCellTransformer.swift; sourceTree = "<group>"; };
+		AD4CB89A2B74B7260048C037 /* DemoDatePickerContentConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoDatePickerContentConfiguration.swift; sourceTree = "<group>"; };
+		ADDC067E2B13A8E800EBF5F4 /* DurationPicker.Mode++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DurationPicker.Mode++.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD22D4662AC9E7A600442E8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA18D872AC9EC8C00563833 /* DurationPicker in Frameworks */,
+				AD2F43312AC9EA4C007A8B09 /* DurationPicker in Frameworks */,
+				AD4E7C612B789AE90012FF74 /* DurationPicker in Frameworks */,
+				AD22D4B62AC9E7EE00442E8F /* DurationPicker in Frameworks */,
+				ADA18D842AC9EBEA00563833 /* DurationPicker in Frameworks */,
+				ADA18D812AC9EAEE00563833 /* DurationPicker in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD1229FD2B43D71B00F18A20 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				AD22D48A2AC9E7D100442E8F /* Adapter */,
+				AD22D4812AC9E7D100442E8F /* Data Source */,
+				ADDC06792B0EF98100EBF5F4 /* Extensions */,
+				AD22D4842AC9E7D100442E8F /* Transformer */,
+				AD22D4922AC9E7D100442E8F /* View */,
+				AD22D4912AC9E7D100442E8F /* DemoViewModel.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		AD22D4602AC9E7A600442E8F = {
+			isa = PBXGroup;
+			children = (
+				AD22D4802AC9E7D100442E8F /* DurationPickerDemo */,
+				AD22D46A2AC9E7A600442E8F /* Products */,
+				AD22D4D82AC9E97C00442E8F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD22D46A2AC9E7A600442E8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD22D4692AC9E7A600442E8F /* DurationPickerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD22D4802AC9E7D100442E8F /* DurationPickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AD7AB6C22B34D1AB00BA8BD6 /* App */,
+				AD1229FD2B43D71B00F18A20 /* Demo */,
+				AD22D4B72AC9E83900442E8F /* Resources */,
+			);
+			path = DurationPickerDemo;
+			sourceTree = "<group>";
+		};
+		AD22D4812AC9E7D100442E8F /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				AD22D4822AC9E7D100442E8F /* DemoDataSource+Models.swift */,
+				AD22D4832AC9E7D100442E8F /* DemoDataSource.swift */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		AD22D4842AC9E7D100442E8F /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				AD4CB8942B74B6090048C037 /* DemoDatePickerCellTransformer.swift */,
+				AD4CB8962B74B6440048C037 /* DemoDurationPickerCellTransformer.swift */,
+				AD22D4862AC9E7D100442E8F /* DemoMenuButtonCellTransformer.swift */,
+				AD22D4872AC9E7D100442E8F /* DemoTextFieldCellTransformer.swift */,
+				AD22D4892AC9E7D100442E8F /* DemoTitleCellTransformer.swift */,
+			);
+			path = Transformer;
+			sourceTree = "<group>";
+		};
+		AD22D48A2AC9E7D100442E8F /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				AD22D48B2AC9E7D100442E8F /* DemoAdapter.swift */,
+				AD22D48C2AC9E7D100442E8F /* DemoCellDelegate.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		AD22D4922AC9E7D100442E8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD22D4942AC9E7D100442E8F /* Content View */,
+				AD22D4932AC9E7D100442E8F /* DemoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD22D4942AC9E7D100442E8F /* Content View */ = {
+			isa = PBXGroup;
+			children = (
+				AD4CB89A2B74B7260048C037 /* DemoDatePickerContentConfiguration.swift */,
+				AD22D4972AC9E7D100442E8F /* DemoDatePickerContentView.swift */,
+				AD22D4952AC9E7D100442E8F /* DemoDurationPickerContentConfiguration.swift */,
+				AD22D49A2AC9E7D100442E8F /* DemoDurationPickerContentView.swift */,
+				AD22D4962AC9E7D100442E8F /* DemoTextFieldContentConfiguration.swift */,
+				AD22D4982AC9E7D100442E8F /* DemoTextFieldContentView.swift */,
+			);
+			path = "Content View";
+			sourceTree = "<group>";
+		};
+		AD22D4B72AC9E83900442E8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD22D49C2AC9E7D100442E8F /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AD22D4D82AC9E97C00442E8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD7AB6C22B34D1AB00BA8BD6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AD22D49B2AC9E7D100442E8F /* AppDelegate.swift */,
+				AD22D49D2AC9E7D100442E8F /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ADDC06792B0EF98100EBF5F4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ADDC067E2B13A8E800EBF5F4 /* DurationPicker.Mode++.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD22D4682AC9E7A600442E8F /* DurationPickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD22D47D2AC9E7A700442E8F /* Build configuration list for PBXNativeTarget "DurationPickerDemo" */;
+			buildPhases = (
+				AD22D4652AC9E7A600442E8F /* Sources */,
+				AD22D4662AC9E7A600442E8F /* Frameworks */,
+				AD22D4672AC9E7A600442E8F /* Resources */,
+				AD22D4CA2AC9E89C00442E8F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DurationPickerDemo;
+			packageProductDependencies = (
+				AD22D4B52AC9E7EE00442E8F /* DurationPicker */,
+				AD2F43302AC9EA4C007A8B09 /* DurationPicker */,
+				ADA18D802AC9EAEE00563833 /* DurationPicker */,
+				ADA18D832AC9EBEA00563833 /* DurationPicker */,
+				ADA18D862AC9EC8C00563833 /* DurationPicker */,
+				AD4E7C602B789AE90012FF74 /* DurationPicker */,
+			);
+			productName = DurationPickerDemo;
+			productReference = AD22D4692AC9E7A600442E8F /* DurationPickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD22D4612AC9E7A600442E8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AD22D4682AC9E7A600442E8F = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AD22D4642AC9E7A600442E8F /* Build configuration list for PBXProject "DurationPickerDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				ca,
+				"zh-HK",
+				"zh-Hans",
+				"zh-Hant",
+				hr,
+				cs,
+				uk,
+				"pt-PT",
+				"pt-BR",
+				"es-419",
+				ro,
+				sk,
+				hu,
+				nb,
+				ms,
+				ru,
+				it,
+				"en-IN",
+				el,
+				pl,
+				es,
+				sv,
+				fi,
+				de,
+				hi,
+				ja,
+				id,
+				"en-GB",
+				"en-AU",
+				tr,
+				"fr-CA",
+				ko,
+				nl,
+				da,
+				th,
+				vi,
+				ar,
+			);
+			mainGroup = AD22D4602AC9E7A600442E8F;
+			packageReferences = (
+				AD4E7C5F2B789AE90012FF74 /* XCLocalSwiftPackageReference ".." */,
+			);
+			productRefGroup = AD22D46A2AC9E7A600442E8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD22D4682AC9E7A600442E8F /* DurationPickerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD22D4672AC9E7A600442E8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD22D4652AC9E7A600442E8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4CB8952B74B6090048C037 /* DemoDatePickerCellTransformer.swift in Sources */,
+				AD22D4A52AC9E7D100442E8F /* DemoAdapter.swift in Sources */,
+				AD22D4B12AC9E7D100442E8F /* AppDelegate.swift in Sources */,
+				AD22D49F2AC9E7D100442E8F /* DemoDataSource.swift in Sources */,
+				AD22D4A92AC9E7D100442E8F /* DemoViewModel.swift in Sources */,
+				AD22D4B02AC9E7D100442E8F /* DemoDurationPickerContentView.swift in Sources */,
+				AD22D4AE2AC9E7D100442E8F /* DemoTextFieldContentView.swift in Sources */,
+				ADDC067F2B13A8E800EBF5F4 /* DurationPicker.Mode++.swift in Sources */,
+				AD22D4A22AC9E7D100442E8F /* DemoTextFieldCellTransformer.swift in Sources */,
+				AD22D4A12AC9E7D100442E8F /* DemoMenuButtonCellTransformer.swift in Sources */,
+				AD22D4AA2AC9E7D100442E8F /* DemoViewController.swift in Sources */,
+				AD22D4A62AC9E7D100442E8F /* DemoCellDelegate.swift in Sources */,
+				AD22D49E2AC9E7D100442E8F /* DemoDataSource+Models.swift in Sources */,
+				AD22D4AB2AC9E7D100442E8F /* DemoDurationPickerContentConfiguration.swift in Sources */,
+				AD22D4A42AC9E7D100442E8F /* DemoTitleCellTransformer.swift in Sources */,
+				AD22D4B32AC9E7D100442E8F /* SceneDelegate.swift in Sources */,
+				AD22D4AD2AC9E7D100442E8F /* DemoDatePickerContentView.swift in Sources */,
+				AD4CB89B2B74B7260048C037 /* DemoDatePickerContentConfiguration.swift in Sources */,
+				AD4CB8972B74B6440048C037 /* DemoDurationPickerCellTransformer.swift in Sources */,
+				AD22D4AC2AC9E7D100442E8F /* DemoTextFieldContentConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AD22D47B2AC9E7A700442E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD22D47C2AC9E7A700442E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD22D47E2AC9E7A700442E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DYZ8Y2U8DB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DurationPickerDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macgallagher.DurationPickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD22D47F2AC9E7A700442E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DYZ8Y2U8DB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DurationPickerDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macgallagher.DurationPickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD22D4642AC9E7A600442E8F /* Build configuration list for PBXProject "DurationPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD22D47B2AC9E7A700442E8F /* Debug */,
+				AD22D47C2AC9E7A700442E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD22D47D2AC9E7A700442E8F /* Build configuration list for PBXNativeTarget "DurationPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD22D47E2AC9E7A700442E8F /* Debug */,
+				AD22D47F2AC9E7A700442E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AD4E7C5F2B789AE90012FF74 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD22D4B52AC9E7EE00442E8F /* DurationPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DurationPicker;
+		};
+		AD2F43302AC9EA4C007A8B09 /* DurationPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DurationPicker;
+		};
+		AD4E7C602B789AE90012FF74 /* DurationPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DurationPicker;
+		};
+		ADA18D802AC9EAEE00563833 /* DurationPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DurationPicker;
+		};
+		ADA18D832AC9EBEA00563833 /* DurationPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DurationPicker;
+		};
+		ADA18D862AC9EC8C00563833 /* DurationPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DurationPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AD22D4612AC9E7A600442E8F /* Project object */;
+}

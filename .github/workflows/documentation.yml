@@ -1,0 +1,52 @@
+# Build and deploy DocC to GitHub pages. Based off of the following guide:
+# https://maxxfrazer.medium.com/deploying-docc-with-github-actions-218c5ca6cad5
+name: Documentation
+
+# Runs on pushes targeting the default branch
+on:
+  push:
+    branches:
+      - main
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    environment:
+      # Must be set to this for deploying to GitHub Pages
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: macos-13
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      # For list of all Xcode and iOS versions, see https://github.com/actions/runner-images/blob/main/images/macos/macos-13-Readme.md#xcode
+      - name: Select Xcode
+        run: sudo xcode-select -s "/Applications/Xcode_15.0.1.app"
+      - name: Build DocC
+        run: |
+          xcodebuild docbuild -scheme DurationPicker \
+            -derivedDataPath /tmp/docbuild \
+            -destination 'generic/platform=iOS';
+          $(xcrun --find docc) process-archive \
+            transform-for-static-hosting /tmp/docbuild/Build/Products/Debug-iphoneos/DurationPicker.doccarchive \
+            --hosting-base-path DurationPicker \
+            --output-path docs;
+          echo "<script>window.location.href += \"/documentation/durationpicker\"</script>" > docs/index.html;
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          # Upload only docs directory from output above
+          path: 'docs'
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v3
+        id: deployment
