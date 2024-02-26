@@ -1,6 +1,8 @@
 # DurationPicker
 [![CI](https://github.com/mac-gallagher/DurationPicker/actions/workflows/ci.yml/badge.svg)](https://github.com/mac-gallagher/DurationPicker/actions/workflows/ci.yml)
 [![Documentation](https://github.com/mac-gallagher/DurationPicker/actions/workflows/documentation.yml/badge.svg)](https://github.com/mac-gallagher/DurationPicker/actions/workflows/documentation.yml)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fmac-gallagher%2FDurationPicker%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/mac-gallagher/DurationPicker)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fmac-gallagher%2FDurationPicker%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/mac-gallagher/DurationPicker)
 
 DurationPicker is an iOS library that provides a customizable control for inputting time values ranging between 0 and 24 hours. It serves as a drop-in replacement of [UIDatePicker](https://developer.apple.com/documentation/uikit/uidatepicker) with [countDownTimer](https://developer.apple.com/documentation/uikit/uidatepicker/mode/countdowntimer) mode with additional functionality for time input.
 
