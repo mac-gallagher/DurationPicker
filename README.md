@@ -63,9 +63,9 @@ You can react to changes in the duration's picker value using [UIActions](https:
 ```swift
 let action = UIAction { [weak picker] _ in
     guard let picker else { return }
-        print(picker.duration) // 1830
-    },
-    for: .primaryAction)
+    print(picker.duration) // 1830
+},
+for: .primaryAction)
     
 picker.addAction(action)
 ```
